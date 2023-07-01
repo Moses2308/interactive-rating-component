@@ -9,7 +9,7 @@
   --weight-light: 400;
   --weight-heavy: 700;
 
-  --neutral-blue: hsl(214, 19%, 29%);
+  --neutral-blue: hsl(215, 19%, 25%);
 }
 
 body {
@@ -61,4 +61,13 @@ button[type="submit"] {
   display: block;
   grid-column-end: span 5;
   width: 100%;
+
+  border: none;
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+  padding: 1rem 0;
+  border-radius: 2rem;
+  font-weight: var(--weight-heavy);
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
