@@ -49,6 +49,12 @@ body {
   opacity: 0;
   position: absolute;
 }
+.rating-card input[type="radio"]:hover + .bubble {
+  background-color: var(--neutral-medium-grey);
+  color: var(--neutral-dark-blue);
+
+  transition: background-color 0.25s ease-in-out;
+}
 .rating-card input[type="radio"]:checked + .bubble {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
