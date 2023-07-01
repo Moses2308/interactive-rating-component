@@ -1,0 +1,14 @@
+:root {
+  --primary-orange: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(213, 19%, 18%);
+
+  --weight-light: 400;
+  --weight-heavy: 700;
+}
+
+body {
+  background-color: var(--neutral-very-dark-blue);
+}
