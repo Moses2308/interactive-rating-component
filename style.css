@@ -3,12 +3,28 @@
   --neutral-grey: hsl(217, 12%, 63%);
   --neutral-medium-grey: hsl(216, 12%, 54%);
   --neutral-dark-blue: hsl(213, 19%, 18%);
-  --neutral-very-dark-blue: hsl(213, 19%, 18%);
+  --neutral-very-dark-blue: hsl(216, 12%, 8%);
 
   --weight-light: 400;
   --weight-heavy: 700;
 }
 
 body {
+  font-family: "Overpass", Arial, sans-serif;
+  font-size: 1rem;
+  color: var(--neutral-grey);
+
   background-color: var(--neutral-very-dark-blue);
+  min-height: 100vh;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.rating-card {
+  background-color: var(--neutral-dark-blue);
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
