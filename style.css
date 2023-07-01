@@ -51,7 +51,7 @@ button.bubble {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: left;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .form__rating-container {
   width: 100%;
@@ -79,9 +79,17 @@ button.bubble {
 .bubble {
   background-color: var(--neutral-blue);
   border: none;
-  padding: 1em 1.5em;
+  padding: 1.5em;
   border-radius: 50%;
   text-align: center;
+
+  position: relative;
+}
+
+.bubble p {
+  position: absolute;
+  top: 30%;
+  left: 40%;
 }
 
 button[type="submit"] {
