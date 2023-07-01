@@ -27,11 +27,13 @@ body {
 .rating-card {
   background-color: var(--neutral-dark-blue);
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: 1rem;
   display: grid;
   justify-items: left;
   gap: 1rem;
+
+  max-width: 400px;
 }
 button.bubble {
   padding: 1em;
@@ -67,13 +69,13 @@ button.bubble {
   background-color: var(--neutral-medium-grey);
   color: var(--neutral-dark-blue);
 
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-out;
 }
 .rating-card input[type="radio"]:checked + .bubble {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
 
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-out;
 }
 
 .bubble {
@@ -99,9 +101,16 @@ button[type="submit"] {
   border: none;
   background-color: var(--primary-orange);
   color: var(--neutral-white);
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   border-radius: 2rem;
   font-weight: var(--weight-heavy);
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+button:hover {
+  background-color: var(--neutral-white);
+  color: orange;
+
+  transition: color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
 }
