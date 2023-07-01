@@ -27,22 +27,30 @@ body {
 .rating-card {
   background-color: var(--neutral-dark-blue);
   margin: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1rem;
+  display: grid;
+  justify-items: left;
+  gap: 1rem;
 }
+button.bubble {
+  padding: 1em;
+  display: block;
+}
+
 .title {
   color: var(--neutral-white);
   font-weight: var(--weight-heavy);
   font-size: 1.5rem;
 }
-
+/* form styles */
 .rating-card form {
   width: 100%;
   position: relative;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+  justify-items: left;
   gap: 1rem;
 }
 .rating-card input[type="radio"] {
