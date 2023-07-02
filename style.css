@@ -67,10 +67,11 @@ button.bubble {
 }
 .rating-card input[type="radio"]:hover + .bubble {
   background-color: var(--neutral-medium-grey);
-  color: var(--neutral-dark-blue);
+  color: var(--neutral-white);
 
   transition: background-color 0.25s ease-out;
 }
+/* why does the above have to be an adjacent sibling combinator in order to work (doesnt work with Descendant combinator) */
 .rating-card input[type="radio"]:checked + .bubble {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
