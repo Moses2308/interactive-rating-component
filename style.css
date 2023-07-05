@@ -10,6 +10,7 @@
   --weight-heavy: 700;
 
   --neutral-blue: hsl(215, 19%, 25%);
+  --gradient-faded-blue: hsl(213, 18%, 10%);
 }
 
 body {
@@ -27,10 +28,13 @@ body {
 .rating-card {
   background-color: var(--neutral-dark-blue);
   margin: 1rem;
-  /* padding: 1.8rem; */
   border-radius: 1rem;
 
   max-width: 400px;
+  background: linear-gradient(
+    var(--neutral-dark-blue),
+    var(--gradient-faded-blue)
+  );
 }
 
 #open-form {
@@ -119,10 +123,6 @@ button[type="submit"]:hover {
 
   transition: color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
-}
-/* TEMPORARY STYLES */
-#open-form {
-  display: grid;
 }
 /* Submitted Styles */
 #submitted-form {
