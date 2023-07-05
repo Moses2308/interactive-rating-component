@@ -119,7 +119,10 @@ button[type="submit"]:hover {
   transition: color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
 }
-
-.rating-card .invisible {
+/* TEMPORARY STYLES */
+#open-form {
   display: none;
+}
+#submitted-form {
+  display: block;
 }
