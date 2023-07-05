@@ -29,12 +29,16 @@ body {
   margin: 1rem;
   padding: 1.75rem;
   border-radius: 1rem;
-  display: grid;
-  justify-items: left;
-  gap: 1rem;
 
   max-width: 400px;
 }
+
+#open-form {
+  display: grid;
+  justify-items: left;
+  gap: 1rem;
+}
+
 button.bubble {
   padding: 1em;
   display: block;
@@ -108,10 +112,14 @@ button[type="submit"] {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-button:hover {
+button[type="submit"]:hover {
   background-color: var(--neutral-white);
   color: orange;
 
   transition: color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
+}
+
+.rating-card .invisible {
+  display: none;
 }

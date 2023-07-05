@@ -25,41 +25,41 @@
   </head>
   <body>
     <article class="rating-card">
-      <button class="bubble">
-        <img src="images/icon-star.svg" />
-      </button>
-      <p class="title">How did we do?</p>
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-
-      <form action="#" id="rating-form">
-        <div class="form__rating-container">
-          <label>
-            <input type="radio" name="rating" />
-            <div class="bubble"><p>1</p></div>
-          </label>
-          <label>
-            <input type="radio" name="rating" />
-            <div class="bubble"><p>2</p></div>
-          </label>
-          <label>
-            <input type="radio" name="rating" />
-            <div class="bubble"><p>3</p></div>
-          </label>
-          <label>
-            <input type="radio" name="rating" />
-            <div class="bubble"><p>4</p></div>
-          </label>
-          <label>
-            <input type="radio" name="rating" />
-            <div class="bubble"><p>5</p></div>
-          </label>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
+      <div id="open-form">
+        <button class="bubble">
+          <img src="images/icon-star.svg" />
+        </button>
+        <p class="title">How did we do?</p>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form action="/formData" id="rating-form">
+          <div class="form__rating-container">
+            <label>
+              <input type="radio" name="rating" />
+              <div class="bubble"><p>1</p></div>
+            </label>
+            <label>
+              <input type="radio" name="rating" />
+              <div class="bubble"><p>2</p></div>
+            </label>
+            <label>
+              <input type="radio" name="rating" />
+              <div class="bubble"><p>3</p></div>
+            </label>
+            <label>
+              <input type="radio" name="rating" />
+              <div class="bubble"><p>4</p></div>
+            </label>
+            <label>
+              <input type="radio" name="rating" />
+              <div class="bubble"><p>5</p></div>
+            </label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </article>
 
     <script src="app.js"></script>
