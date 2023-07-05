@@ -27,13 +27,14 @@ body {
 .rating-card {
   background-color: var(--neutral-dark-blue);
   margin: 1rem;
-  padding: 1.75rem;
+  /* padding: 1.8rem; */
   border-radius: 1rem;
 
   max-width: 400px;
 }
 
 #open-form {
+  margin: 1.8rem;
   display: grid;
   justify-items: left;
   gap: 1rem;
@@ -121,8 +122,23 @@ button[type="submit"]:hover {
 }
 /* TEMPORARY STYLES */
 #open-form {
-  display: none;
+  display: grid;
 }
+/* Submitted Styles */
 #submitted-form {
-  display: block;
+  display: none;
+  justify-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin: 2.75rem 2rem;
+}
+.submitted__confirmation {
+  color: var(--primary-orange);
+  background-color: var(--neutral-blue);
+  padding: 0.5em 1.5em;
+  border-radius: 2.25em;
+}
+.thank-container {
+  display: grid;
+  gap: 1rem;
 }

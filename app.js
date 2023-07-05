@@ -5,6 +5,6 @@ const submittedForm = document.querySelector("#submitted-form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   openForm.style.display = "none";
-  submittedForm.style.display = "block";
+  submittedForm.style.display = "grid";
 });
-// TODO : prevent form submission, get data from form, make new card using data
+// TODO : get data from form, make new card using data
