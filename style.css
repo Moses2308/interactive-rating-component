@@ -17,13 +17,12 @@ body {
   font-family: "Overpass", Arial, sans-serif;
   font-size: 15px;
   color: var(--neutral-grey);
-
-  background-color: var(--neutral-very-dark-blue);
-  min-height: 100vh;
-
   display: grid;
   align-items: center;
   justify-items: center;
+
+  background-color: var(--neutral-very-dark-blue);
+  min-height: 100vh;
 }
 .rating-card {
   background-color: var(--neutral-dark-blue);
@@ -80,7 +79,7 @@ button.bubble {
 
   transition: background-color 0.25s ease-out;
 }
-/* why does the above have to be an adjacent sibling combinator in order to work (doesnt work with Descendant combinator) */
+/*  + is the adjacent selector */
 .rating-card input[type="radio"]:checked + .bubble {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
